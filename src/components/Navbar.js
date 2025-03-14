@@ -16,7 +16,7 @@ const CustomNavbar = () => {
             </Nav>
       </div>
       <div className="navbrand">
-      <Navbar.Brand href="#">Purely Handmade</Navbar.Brand>
+      <Navbar.Brand href="/">Purely Handmade</Navbar.Brand>
       </div>
       {/* Navbar */}
       <Navbar expand="lg" className="custom-navbar">
@@ -33,10 +33,10 @@ const CustomNavbar = () => {
             {/* Menu Links */}
             <Nav className="ms-auto navlink">
               <Nav.Link href="/soap">Soap</Nav.Link>
-              <Nav.Link href="#">Oil</Nav.Link>
-              <Nav.Link href="#">Shampoo</Nav.Link>
-              <Nav.Link href="#">Candle</Nav.Link>
-              <Nav.Link href="#">Pickle</Nav.Link>
+              <Nav.Link href="/oil">Oil</Nav.Link>
+              <Nav.Link href="/shampoo">Shampoo</Nav.Link>
+              <Nav.Link href="/candle">Candle</Nav.Link>
+              <Nav.Link href="/pickle">Pickle</Nav.Link>
             </Nav>
 
             

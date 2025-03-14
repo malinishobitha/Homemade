@@ -1,11 +1,11 @@
 import React from "react";
 import './css/Soap.css';
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
-import soapBanner from './images/soapbanner.jpeg';
-import neemsoap from './images/neem soap.jpeg';
-import tulasisoap from './images/tulasi soap.jpeg';
-import aloverasoap from './images/alovera soap.jpeg';
-import turmericsoap from './images/turmeric soap.jpeg';
+import candleBanner from './images/candlebanner.jpeg';
+import candle1 from './images/candle1.jpeg';
+import candle2 from './images/candle2.jpeg';
+import candle3 from './images/candle3.jpeg';
+import candle4 from './images/candle4.jpeg';
 import strawberrysoap from './images/straberry soap.jpeg';
 import orangesoap from './images/orange soap.jpeg';
 import rosesoap from './images/Rose  Soap.jpeg';
@@ -20,7 +20,7 @@ import eucalyptussoap from './images/esoap.jpeg';
 import peppermintsoap from './images/peppermint soap.jpeg';
 import teatreesoap from './images/teatree soap.jpeg';
 import rosemarysoap from './images/rosemary soap.jpeg';
-function Soap() {
+function Candle() {
     const scrollToSection = (id) => {
         const section = document.getElementById(id);
         if (section) {
@@ -30,26 +30,29 @@ function Soap() {
     
     return (
         <div className='Container-Fluid'>
-            <div className="card text-bg-dark banne">
-                <img src={soapBanner} className="card-img" alt="banner image" />
+            <div className="card text-bg-dark">
+                <img src={candleBanner} className="card-img" alt="banner image" />
                 <div className="card-img-overlay ">
-                    <h5 className="card-title banner-content">Pure Skincare, Handmade with Love</h5>
+                <h5 className="card-title banner-content" style={{ marginRight: "50%", display: "block", width: "fit-content" }}>
+    HandMade Candles,<br /> Heartwarming Moments
+</h5>
+
                 </div>
             </div>
             <div className='container-Fluid'>
                 <div className='soap-det'>
                 <div className='soap-types'>
-                <p onClick={() => scrollToSection("herbal")}>HERBAL Soaps</p>
-                <p onClick={() => scrollToSection("fruit")}>FRUIT Soaps</p>
-                <p onClick={() => scrollToSection("flower")}>FLOWER Soaps</p>
-                <p onClick={() => scrollToSection("milk")}>MILK Soaps</p>
-                 <p onClick={() => scrollToSection("oil")}>OIL Soaps</p>
+                <p onClick={() => scrollToSection("herbal")}>WAX Candles</p>
+                <p onClick={() => scrollToSection("fruit")}>SCENTED Candles</p>
+                <p onClick={() => scrollToSection("flower")}>NATURAL Candles</p>
+                <p onClick={() => scrollToSection("milk")}>LUXURY Candles</p>
+                 <p onClick={() => scrollToSection("oil")}>FESTIVAL Candles</p>
                 </div>
                 <div id = 'herbal' className='productcards'>
                 <div className="card product-card">
-                    <img src={neemsoap} className="card-img-top" alt='soap' />
+                    <img src={candle1} className="card-img-top" alt='soap' />
                     <div className="card-body text-center">
-                        <h5 className="card-title">Neem Soap - Antibacterial</h5>
+                        <h5 className="card-title">Soy Wax Candles</h5>
                         <div className="product-price">
                         <h5 className="price">₹ 120</h5>
                         <div className="rating">
@@ -66,9 +69,9 @@ function Soap() {
                     </div>
                 </div>
                 <div className="card product-card">
-                    <img src={tulasisoap} className="card-img-top" alt='soap' />
+                    <img src={candle2} className="card-img-top" alt='soap' />
                     <div className="card-body text-center">
-                        <h5 className="card-title">Tulasi Soap</h5>
+                        <h5 className="card-title">Beeswax Candles</h5>
                         <div className="product-price">
                         <h5 className="price">₹ 200</h5>
                         <div className="rating">
@@ -86,9 +89,9 @@ function Soap() {
                 </div>
                 
                 <div className="card product-card">
-                    <img src={aloverasoap} className="card-img-top" alt='soap' />
+                    <img src={candle3} className="card-img-top" alt='soap' />
                     <div className="card-body text-center">
-                        <h5 className="card-title">Alovera Soap</h5>
+                        <h5 className="card-title">Paraffin Wax Candles</h5>
                         <div className="product-price">
                         <h5 className="price">₹ 120</h5>
                         <div className="rating">
@@ -104,9 +107,9 @@ function Soap() {
                     </div>
                     </div>
                 <div className="card product-card">
-                    <img src={turmericsoap} className="card-img-top" alt='soap' />
+                    <img src={candle4} className="card-img-top" alt='soap' />
                     <div className="card-body text-center">
-                        <h5 className="card-title">Turmeric Soap</h5>
+                        <h5 className="card-title">Coconut Wax Candles</h5>
                         <div className="product-price">
                         <h5 className="price">₹ 120</h5>
                         <div className="rating">
@@ -394,4 +397,4 @@ function Soap() {
     </div>  
     );
 }
-export default Soap
+export default Candle

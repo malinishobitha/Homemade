@@ -1,11 +1,11 @@
 import React from "react";
 import './css/Soap.css';
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
-import soapBanner from './images/soapbanner.jpeg';
-import neemsoap from './images/neem soap.jpeg';
-import tulasisoap from './images/tulasi soap.jpeg';
-import aloverasoap from './images/alovera soap.jpeg';
-import turmericsoap from './images/turmeric soap.jpeg';
+import shampooBanner from './images/shampoobanner.jpeg';
+import aloeverashampoo from './images/aloeverashampoo.jpeg';
+import shikakaishampoo from './images/siyakaishampoo.jpeg';
+import hibiscusshampoo from './images/hibiscus shampoo.jpeg';
+import morigashampoo from './images/murungai shampoo.jpeg';
 import strawberrysoap from './images/straberry soap.jpeg';
 import orangesoap from './images/orange soap.jpeg';
 import rosesoap from './images/Rose  Soap.jpeg';
@@ -20,7 +20,7 @@ import eucalyptussoap from './images/esoap.jpeg';
 import peppermintsoap from './images/peppermint soap.jpeg';
 import teatreesoap from './images/teatree soap.jpeg';
 import rosemarysoap from './images/rosemary soap.jpeg';
-function Soap() {
+function Shampoo() {
     const scrollToSection = (id) => {
         const section = document.getElementById(id);
         if (section) {
@@ -30,26 +30,26 @@ function Soap() {
     
     return (
         <div className='Container-Fluid'>
-            <div className="card text-bg-dark banne">
-                <img src={soapBanner} className="card-img" alt="banner image" />
+            <div className="card text-bg-dark">
+                <img src={shampooBanner} className="card-img" alt="banner image" />
                 <div className="card-img-overlay ">
-                    <h5 className="card-title banner-content">Pure Skincare, Handmade with Love</h5>
+                    <h5 className="card-title banner-content">Say GoodBye to Chemicals, <br></br>Hello to Nature!</h5>
                 </div>
             </div>
             <div className='container-Fluid'>
                 <div className='soap-det'>
                 <div className='soap-types'>
-                <p onClick={() => scrollToSection("herbal")}>HERBAL Soaps</p>
-                <p onClick={() => scrollToSection("fruit")}>FRUIT Soaps</p>
-                <p onClick={() => scrollToSection("flower")}>FLOWER Soaps</p>
-                <p onClick={() => scrollToSection("milk")}>MILK Soaps</p>
-                 <p onClick={() => scrollToSection("oil")}>OIL Soaps</p>
+                <p onClick={() => scrollToSection("herbal")}>HERBAL Shampoos</p>
+                <p onClick={() => scrollToSection("fruit")}>FRUIT Shampoos</p>
+                <p onClick={() => scrollToSection("flower")}>FLOWER Shampoos</p>
+                <p onClick={() => scrollToSection("milk")}>Protein Shampoos</p>
+                 <p onClick={() => scrollToSection("oil")}>Anti Dandruff</p>
                 </div>
                 <div id = 'herbal' className='productcards'>
                 <div className="card product-card">
-                    <img src={neemsoap} className="card-img-top" alt='soap' />
+                    <img src={aloeverashampoo} className="card-img-top" alt='soap' />
                     <div className="card-body text-center">
-                        <h5 className="card-title">Neem Soap - Antibacterial</h5>
+                        <h5 className="card-title">Aloe Vera Shampoos</h5>
                         <div className="product-price">
                         <h5 className="price">₹ 120</h5>
                         <div className="rating">
@@ -66,9 +66,9 @@ function Soap() {
                     </div>
                 </div>
                 <div className="card product-card">
-                    <img src={tulasisoap} className="card-img-top" alt='soap' />
+                    <img src={shikakaishampoo} className="card-img-top" alt='soap' />
                     <div className="card-body text-center">
-                        <h5 className="card-title">Tulasi Soap</h5>
+                        <h5 className="card-title">Shikkai & Rettha Shampoos</h5>
                         <div className="product-price">
                         <h5 className="price">₹ 200</h5>
                         <div className="rating">
@@ -86,11 +86,11 @@ function Soap() {
                 </div>
                 
                 <div className="card product-card">
-                    <img src={aloverasoap} className="card-img-top" alt='soap' />
+                    <img src={hibiscusshampoo} className="card-img-top" alt='soap' />
                     <div className="card-body text-center">
-                        <h5 className="card-title">Alovera Soap</h5>
+                        <h5 className="card-title">Hibiscus Shampoos</h5>
                         <div className="product-price">
-                        <h5 className="price">₹ 120</h5>
+                        <h5 className="price">₹ 180</h5>
                         <div className="rating">
                             <FaStar className="star" />
                             <FaStar className="star" />
@@ -104,11 +104,11 @@ function Soap() {
                     </div>
                     </div>
                 <div className="card product-card">
-                    <img src={turmericsoap} className="card-img-top" alt='soap' />
+                    <img src={morigashampoo} className="card-img-top" alt='soap' />
                     <div className="card-body text-center">
-                        <h5 className="card-title">Turmeric Soap</h5>
+                        <h5 className="card-title">Moringai Shampoos</h5>
                         <div className="product-price">
-                        <h5 className="price">₹ 120</h5>
+                        <h5 className="price">₹ 90</h5>
                         <div className="rating">
                             <FaStar className="star" />
                             <FaStar className="star" />
@@ -394,4 +394,4 @@ function Soap() {
     </div>  
     );
 }
-export default Soap
+export default Shampoo

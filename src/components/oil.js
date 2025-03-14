@@ -1,55 +1,56 @@
-import React from "react";
-import './css/Soap.css';
+import React from 'react';
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
-import soapBanner from './images/soapbanner.jpeg';
-import neemsoap from './images/neem soap.jpeg';
-import tulasisoap from './images/tulasi soap.jpeg';
-import aloverasoap from './images/alovera soap.jpeg';
-import turmericsoap from './images/turmeric soap.jpeg';
-import strawberrysoap from './images/straberry soap.jpeg';
-import orangesoap from './images/orange soap.jpeg';
-import rosesoap from './images/Rose  Soap.jpeg';
-import hibisucssoap from './images/hibiscus soap.jpeg';
-import jasminesoap from './images/jasmine soap.jpeg';
-import lavendarsoap from './images/flower soap.jpeg';
-import goatmilksoap from './images/goatmilk soap.jpeg';
-import cowmilksoap from './images/cowmilk soap.jpeg';
-import coconutmilksoap from './images/coconut soap.jpeg';
-import badamsoap from './images/almond soap.jpeg';
-import eucalyptussoap from './images/esoap.jpeg';
-import peppermintsoap from './images/peppermint soap.jpeg';
-import teatreesoap from './images/teatree soap.jpeg';
-import rosemarysoap from './images/rosemary soap.jpeg';
-function Soap() {
+import oilbanner from './images/oilbanner.jpeg';
+import coconutoil from './images/coconut oil.jpeg';
+import amalaoil from './images/amla oil.jpeg';
+import curryoil from './images/curry oil.jpeg';
+import bhringrajoil from './images/bhringraj oil.jpeg';
+import aloeveraoil from './images/aloevera oil.jpeg';
+import almondoil from './images/almond oil.jpeg';
+import rosehipoil from './images/rosehip oil.jpeg';
+import saffronoil from './images/saffron oil.jpeg';
+import coconutcooking from './images/coconut cooking oil.jpeg';
+import mustardoil from './images/mustrate oil.jpeg';
+import sesameoil from './images/sesame oil.jpeg';
+import groundnutoil from './images/oil.jpeg';
+import Lavendaroil from './images/essential.jpeg';
+import teatreeoil from './images/teatree oil.jpeg';
+import peppermintoil from './images/peppermin oil.jpeg';
+import eucalyptusoil from './images/eucalyptus oil.jpeg';
+import bhringarajoil from './images/bhringraj oil.jpeg';
+import kumkumadioil from './images/kumkumadi oil.jpeg';
+import dashmooloil from './images/dashmool oil.jpeg';
+import mahanarayanoil from './images/maharayan oil.jpeg';
+import './css/Soap.css';
+function Oil(){
     const scrollToSection = (id) => {
         const section = document.getElementById(id);
         if (section) {
           section.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       };
-    
-    return (
-        <div className='Container-Fluid'>
-            <div className="card text-bg-dark banne">
-                <img src={soapBanner} className="card-img" alt="banner image" />
+    return(
+      <div className='Container-Fluid'>
+           <div className="card text-bg-dark">
+                <img src={oilbanner} className="card-img" alt="banner image" />
                 <div className="card-img-overlay ">
-                    <h5 className="card-title banner-content">Pure Skincare, Handmade with Love</h5>
+                    <h5 className="card-title banner-content">Where Tradion Meets Purity</h5>
                 </div>
             </div>
             <div className='container-Fluid'>
                 <div className='soap-det'>
                 <div className='soap-types'>
-                <p onClick={() => scrollToSection("herbal")}>HERBAL Soaps</p>
-                <p onClick={() => scrollToSection("fruit")}>FRUIT Soaps</p>
-                <p onClick={() => scrollToSection("flower")}>FLOWER Soaps</p>
-                <p onClick={() => scrollToSection("milk")}>MILK Soaps</p>
-                 <p onClick={() => scrollToSection("oil")}>OIL Soaps</p>
+                <p onClick={() => scrollToSection("hair")}>HAIRCARE Oils</p>
+                <p onClick={() => scrollToSection("skin")}>SKINCARE Oils</p>
+                <p onClick={() => scrollToSection("cooking")}>COOKING Oils</p>
+                <p onClick={() => scrollToSection("essential")}>ESSENTIAL Oils</p>
+                 <p onClick={() => scrollToSection("ayurvedic")}>AYURVEDIC Oils</p>
                 </div>
-                <div id = 'herbal' className='productcards'>
+                <div id = 'hair' className='productcards'>
                 <div className="card product-card">
-                    <img src={neemsoap} className="card-img-top" alt='soap' />
+                    <img src={coconutoil} className="card-img-top" alt='soap' />
                     <div className="card-body text-center">
-                        <h5 className="card-title">Neem Soap - Antibacterial</h5>
+                        <h5 className="card-title">Cold-Pressed Coconut Oil</h5>
                         <div className="product-price">
                         <h5 className="price">₹ 120</h5>
                         <div className="rating">
@@ -66,9 +67,9 @@ function Soap() {
                     </div>
                 </div>
                 <div className="card product-card">
-                    <img src={tulasisoap} className="card-img-top" alt='soap' />
+                    <img src={amalaoil} className="card-img-top" alt='soap' />
                     <div className="card-body text-center">
-                        <h5 className="card-title">Tulasi Soap</h5>
+                        <h5 className="card-title">Amla Hair Oil</h5>
                         <div className="product-price">
                         <h5 className="price">₹ 200</h5>
                         <div className="rating">
@@ -86,11 +87,11 @@ function Soap() {
                 </div>
                 
                 <div className="card product-card">
-                    <img src={aloverasoap} className="card-img-top" alt='soap' />
+                    <img src={curryoil} className="card-img-top" alt='soap' />
                     <div className="card-body text-center">
-                        <h5 className="card-title">Alovera Soap</h5>
+                        <h5 className="card-title">Curry Leaves Hair Oil</h5>
                         <div className="product-price">
-                        <h5 className="price">₹ 120</h5>
+                        <h5 className="price">₹ 180</h5>
                         <div className="rating">
                             <FaStar className="star" />
                             <FaStar className="star" />
@@ -104,123 +105,9 @@ function Soap() {
                     </div>
                     </div>
                 <div className="card product-card">
-                    <img src={turmericsoap} className="card-img-top" alt='soap' />
+                    <img src={bhringrajoil} className="card-img-top" alt='soap' />
                     <div className="card-body text-center">
-                        <h5 className="card-title">Turmeric Soap</h5>
-                        <div className="product-price">
-                        <h5 className="price">₹ 120</h5>
-                        <div className="rating">
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStarHalfAlt className="star" /><br/>
-                            <span className="review-text"> 994 reviews</span>
-                        </div>
-                        </div>
-                       
-                        <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
-                    </div>
-                </div>
-                <div id='fruit' className="card product-card">
-                    <img src={strawberrysoap} className="card-img-top" alt='soap' />
-                    <div className="card-body text-center">
-                        <h5 className="card-title">Turmeric Soap</h5>
-                        <div className="product-price">
-                        <h5 className="price">₹ 120</h5>
-                        <div className="rating">
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStarHalfAlt className="star" /><br/>
-                            <span className="review-text"> 994 reviews</span>
-                        </div>
-                        </div>
-                       
-                        <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
-                    </div>
-                </div>
-                <div className="card product-card">
-                    <img src={orangesoap} className="card-img-top" alt='soap' />
-                    <div className="card-body text-center">
-                        <h5 className="card-title">Orange Soap</h5>
-                        <div className="product-price">
-                        <h5 className="price">₹ 80</h5>
-                        <div className="rating">
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStarHalfAlt className="star" /><br/>
-                            <span className="review-text"> 994 reviews</span>
-                        </div>
-                        </div>
-                       
-                        <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
-                    </div>
-                </div>
-               <div id='flower' className="card product-card">
-                    <img src={rosesoap} className="card-img-top" alt='soap' />
-                    <div className="card-body text-center">
-                        <h5 className="card-title">Rose Soap</h5>
-                        <div className="product-price">
-                        <h5 className="price">₹ 120</h5>
-                        <div className="rating">
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStarHalfAlt className="star" /><br/>
-                            <span className="review-text"> 994 reviews</span>
-                        </div>
-                        </div>
-                       
-                        <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
-                    </div>
-                </div>
-                 <div id='fruit' className="card product-card">
-                    <img src={hibisucssoap} className="card-img-top" alt='soap' />
-                    <div className="card-body text-center">
-                        <h5 className="card-title">Hibiscus soap</h5>
-                        <div className="product-price">
-                        <h5 className="price">₹ 200</h5>
-                        <div className="rating">
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStarHalfAlt className="star" /><br/>
-                            <span className="review-text"> 994 reviews</span>
-                        </div>
-                        </div>
-                       
-                        <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
-                    </div>
-                </div>
-                    <div id='fruit' className="card product-card">
-                    <img src={jasminesoap} className="card-img-top" alt='soap' />
-                    <div className="card-body text-center">
-                        <h5 className="card-title">Jasmine Soap</h5>
-                        <div className="product-price">
-                        <h5 className="price">₹ 180</h5>
-                        <div className="rating">
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStarHalfAlt className="star" /><br/>
-                            <span className="review-text"> 994 reviews</span>
-                        </div>
-                        </div>
-                       
-                        <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
-                    </div>
-                </div>
-                    <div id='fruit' className="card product-card">
-                    <img src={lavendarsoap} className="card-img-top" alt='soap' />
-                    <div className="card-body text-center">
-                        <h5 className="card-title">Lavendar Soap</h5>
+                        <h5 className="card-title">Bhringraj Herbal Hair Oil</h5>
                         <div className="product-price">
                         <h5 className="price">₹ 90</h5>
                         <div className="rating">
@@ -236,10 +123,10 @@ function Soap() {
                         <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
                     </div>
                 </div>
-                    <div id='milk' className="card product-card">
-                    <img src={goatmilksoap} className="card-img-top" alt='soap' />
+                <div id='skin' className="card product-card">
+                    <img src={aloeveraoil} className="card-img-top" alt='soap' />
                     <div className="card-body text-center">
-                        <h5 className="card-title">GoatMilk Soap</h5>
+                        <h5 className="card-title">Aloe Vera Infused Oil</h5>
                         <div className="product-price">
                         <h5 className="price">₹ 180</h5>
                         <div className="rating">
@@ -255,10 +142,10 @@ function Soap() {
                         <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
                     </div>
                 </div>
-                    <div id='milk' className="card product-card">
-                    <img src={cowmilksoap} className="card-img-top" alt='soap' />
+                <div id='skin' className="card product-card">
+                    <img src={rosehipoil} className="card-img-top" alt='soap' />
                     <div className="card-body text-center">
-                        <h5 className="card-title">Cowmilk Soap</h5>
+                        <h5 className="card-title">Rosehip Oil</h5>
                         <div className="product-price">
                         <h5 className="price">₹ 100</h5>
                         <div className="rating">
@@ -274,12 +161,12 @@ function Soap() {
                         <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
                     </div>
                 </div>
-                    <div id='milk' className="card product-card">
-                    <img src={coconutmilksoap} className="card-img-top" alt='soap' />
+               <div id='skin' className="card product-card">
+                    <img src={almondoil} className="card-img-top" alt='soap' />
                     <div className="card-body text-center">
-                        <h5 className="card-title">CoconutMilk Soap</h5>
+                        <h5 className="card-title">Almond Oil</h5>
                         <div className="product-price">
-                        <h5 className="price">₹ 330</h5>
+                        <h5 className="price">₹ 120</h5>
                         <div className="rating">
                             <FaStar className="star" />
                             <FaStar className="star" />
@@ -293,10 +180,10 @@ function Soap() {
                         <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
                     </div>
                 </div>
-                    <div id='milk' className="card product-card">
-                    <img src={badamsoap} className="card-img-top" alt='soap' />
+                 <div id='skin' className="card product-card">
+                    <img src={saffronoil} className="card-img-top" alt='soap' />
                     <div className="card-body text-center">
-                        <h5 className="card-title">BadamMilk Soap</h5>
+                        <h5 className="card-title">Saffron Oil</h5>
                         <div className="product-price">
                         <h5 className="price">₹ 80</h5>
                         <div className="rating">
@@ -312,28 +199,10 @@ function Soap() {
                         <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
                     </div>
                 </div>
-                    <div id='oil' className="card product-card">
-                    <img src={eucalyptussoap} className="card-img-top" alt='soap' />
+                    <div id='cooking' className="card product-card">
+                    <img src={coconutcooking} className="card-img-top" alt='soap' />
                     <div className="card-body text-center">
-                        <h5 className="card-title">eucalyptus Oil Soap</h5>
-                        <div className="product-price">
-                        <h5 className="price">₹ 120</h5>
-                        <div className="rating">
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStar className="star" />
-                            <FaStarHalfAlt className="star" /><br/>
-                            <span className="review-text"> 994 reviews</span>
-                        </div>
-                        </div>
-                        <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
-                    </div>
-                </div>
-                    <div id='oil' className="card product-card">
-                    <img src={peppermintsoap} className="card-img-top" alt='soap' />
-                    <div className="card-body text-center">
-                        <h5 className="card-title">Peppermint Soap</h5>
+                        <h5 className="card-title">Cold - Pressed Coconut Oil</h5>
                         <div className="product-price">
                         <h5 className="price">₹ 120</h5>
                         <div className="rating">
@@ -349,10 +218,29 @@ function Soap() {
                         <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
                     </div>
                 </div>
-                    <div id='oil' className="card product-card">
-                    <img src={teatreesoap} className="card-img-top" alt='soap' />
+                    <div id='cooking' className="card product-card">
+                    <img src={mustardoil} className="card-img-top" alt='soap' />
                     <div className="card-body text-center">
-                        <h5 className="card-title">Teatree Oil Soap</h5>
+                        <h5 className="card-title">Cold - Pressed Mustard Oil</h5>
+                        <div className="product-price">
+                        <h5 className="price">₹ 200</h5>
+                        <div className="rating">
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStarHalfAlt className="star" /><br/>
+                            <span className="review-text"> 994 reviews</span>
+                        </div>
+                        </div>
+                       
+                        <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
+                    </div>
+                </div>
+                    <div id='cooking' className="card product-card">
+                    <img src={sesameoil} className="card-img-top" alt='soap' />
+                    <div className="card-body text-center">
+                        <h5 className="card-title">Sesame Oil</h5>
                         <div className="product-price">
                         <h5 className="price">₹ 180</h5>
                         <div className="rating">
@@ -368,10 +256,10 @@ function Soap() {
                         <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
                     </div>
                 </div>
-                    <div id='oil' className="card product-card">
-                    <img src={rosemarysoap} className="card-img-top" alt='soap' />
+                    <div id='cooking' className="card product-card">
+                    <img src={groundnutoil} className="card-img-top" alt='soap' />
                     <div className="card-body text-center">
-                        <h5 className="card-title">Rosemary Oil Soap</h5>
+                        <h5 className="card-title">Groundnut Oil</h5>
                         <div className="product-price">
                         <h5 className="price">₹ 90</h5>
                         <div className="rating">
@@ -387,11 +275,157 @@ function Soap() {
                         <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
                     </div>
                 </div>
+                    <div id='essential' className="card product-card">
+                    <img src={Lavendaroil} className="card-img-top" alt='soap' />
+                    <div className="card-body text-center">
+                        <h5 className="card-title">Lavendar Essential Oil</h5>
+                        <div className="product-price">
+                        <h5 className="price">₹ 180</h5>
+                        <div className="rating">
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStarHalfAlt className="star" /><br/>
+                            <span className="review-text"> 994 reviews</span>
+                        </div>
+                        </div>
+                       
+                        <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
+                    </div>
+                </div>
+                    <div id='essential' className="card product-card">
+                    <img src={peppermintoil} className="card-img-top" alt='soap' />
+                    <div className="card-body text-center">
+                        <h5 className="card-title">Peppermint Oil</h5>
+                        <div className="product-price">
+                        <h5 className="price">₹ 330</h5>
+                        <div className="rating">
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStarHalfAlt className="star" /><br/>
+                            <span className="review-text"> 994 reviews</span>
+                        </div>
+                        </div>
+                       
+                        <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
+                    </div>
+                </div>
+                    <div id='oil' className="card product-card">
+                    <img src={eucalyptusoil} className="card-img-top" alt='soap' />
+                    <div className="card-body text-center">
+                        <h5 className="card-title">Eucalyptus Oil </h5>
+                        <div className="product-price">
+                        <h5 className="price">₹ 80</h5>
+                        <div className="rating">
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStarHalfAlt className="star" /><br/>
+                            <span className="review-text"> 994 reviews</span>
+                        </div>
+                        </div>
+                        <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
+                    </div>
+                </div>
+                    <div id='oil' className="card product-card">
+                    <img src={bhringarajoil} className="card-img-top" alt='soap' />
+                    <div className="card-body text-center">
+                        <h5 className="card-title">Bhringraj Oil</h5>
+                        <div className="product-price">
+                        <h5 className="price">₹ 120</h5>
+                        <div className="rating">
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStarHalfAlt className="star" /><br/>
+                            <span className="review-text"> 994 reviews</span>
+                        </div>
+                        </div>
+                       
+                        <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
+                    </div>
+                </div>
+                    <div id='essential' className="card product-card">
+                    <img src={teatreeoil} className="card-img-top" alt='soap' />
+                    <div className="card-body text-center">
+                        <h5 className="card-title">Teatree Oil Soap</h5>
+                        <div className="product-price">
+                        <h5 className="price">₹ 180</h5>
+                        <div className="rating">
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStarHalfAlt className="star" /><br/>
+                            <span className="review-text"> 994 reviews</span>
+                        </div>
+                        </div>
+                        <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
+                    </div>
+                </div>
+                    <div id='essential' className="card product-card">
+                    <img src={kumkumadioil} className="card-img-top" alt='soap' />
+                    <div className="card-body text-center">
+                        <h5 className="card-title">Kumkumadi Oil</h5>
+                        <div className="product-price">
+                        <h5 className="price">₹ 200</h5>
+                        <div className="rating">
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStarHalfAlt className="star" /><br/>
+                            <span className="review-text"> 994 reviews</span>
+                        </div>
+                        </div>  
+                        <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
+                    </div>
+                </div>
+                <div id='ayurvedi' className="card product-card">
+                    <img src={dashmooloil} className="card-img-top" alt='soap' />
+                    <div className="card-body text-center">
+                        <h5 className="card-title">Dashmool Oil</h5>
+                        <div className="product-price">
+                        <h5 className="price">₹ 180</h5>
+                        <div className="rating">
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStarHalfAlt className="star" /><br/>
+                            <span className="review-text"> 994 reviews</span>
+                        </div>
+                        </div>  
+                        <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
+                    </div>
+                </div>
+                <div id='essential' className="card product-card">
+                    <img src={mahanarayanoil} className="card-img-top" alt='soap' />
+                    <div className="card-body text-center">
+                        <h5 className="card-title">Mahanarayan Oil</h5>
+                        <div className="product-price">
+                        <h5 className="price">₹ 90</h5>
+                        <div className="rating">
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStar className="star" />
+                            <FaStarHalfAlt className="star" /><br/>
+                            <span className="review-text"> 994 reviews</span>
+                        </div>
+                        </div>  
+                        <button className="btn btn-outline-primary w-100">ADD TO BAG</button>
+                    </div>
+                </div>
             </div>
         </div>
-
       </div>
-    </div>  
+      </div>
     );
 }
-export default Soap
+export default Oil
